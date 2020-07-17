@@ -17,7 +17,13 @@
         // echo strlen($name);
         // echo str_replace("Giraffe", "Helio", $school);
         // echo substr($school, 8, 3);
-        
     ?>
+    <form action="site.php" method="get"> 
+        Name: <input type="text" name="name" required/>
+        Age: <input type="number" name="age" required/>
+        <input type="submit" />
+    </form>
+    Your Name is <?php echo $_GET["name"]?>
+    Your Age is <?php echo $_GET["age"]?>
 </body>
 </html>

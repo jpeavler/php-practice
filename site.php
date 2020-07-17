@@ -18,12 +18,13 @@
         // echo str_replace("Giraffe", "Helio", $school);
         // echo substr($school, 8, 3);
     ?>
-    <form action="site.php" method="get"> 
+    <form action="site.php" method="post">
+    <!-- Get will make this value visible in the URL, use post method instead for secure info -->
         Name: <input type="text" name="name" required/>
         Age: <input type="number" name="age" required/>
         <input type="submit" />
     </form>
-    Your Name is <?php echo $_GET["name"]?>
-    Your Age is <?php echo $_GET["age"]?>
+    Your Name is <?php echo $_POST["name"]?>
+    Your Age is <?php echo $_POST["age"]?>
 </body>
 </html>

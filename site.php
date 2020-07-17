@@ -41,5 +41,11 @@
         sayHi("Bob");
         sayHi("John");
     ?>
+    <?php 
+        include "book.php";
+        $book1 = new Book("Harry Potter", "JK Rowling", 399);
+        $book2 = new Book("Lord of the Rings", "JRR Tolkien", 299);
+        echo $book1->title;
+    ?>
 </body>
 </html>
